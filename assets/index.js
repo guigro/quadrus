@@ -628,7 +628,7 @@ var et = Ke(Fe => {
                     r = a.firstChild;
                 return d(r, (() => {
                     const u = Q(() => l() === 4, !0);
-                    return () => u() ? lang.appname + lang.complete  : l() === 3 ? lang.soclose : lang.betterluck
+                    return () => u() ? "Qwartel" + lang.complete  : l() === 3 ? lang.soclose : lang.betterluck
                 })()), d(a, (() => {
                     const u = Q(() => e.mode === "free", !0);
                     return () => u() ? g(ia, {
@@ -684,9 +684,9 @@ var et = Ke(Fe => {
     }
     const Ge = (e, s) => {
             let t = "";
-            e === "daily" ? t = lang.daily + lang.appname + s.seed.toString(10) + `
+            e === "daily" ? t = lang.daily + "Qwartel" + s.seed.toString(10) + `
 ` + H(s.answersCorrect[0]) + H(s.answersCorrect[1]) + `
-` + H(s.answersCorrect[2]) + H(s.answersCorrect[3]) : t = lang.practice + lang.appname + `
+` + H(s.answersCorrect[2]) + H(s.answersCorrect[3]) : t = lang.practice + "Qwartel" + `
 ` + H(s.answersCorrect[0]) + H(s.answersCorrect[1]) + (" " + s.answers[0].toUpperCase() + " - " + s.answers[1].toUpperCase()) + `
 ` + H(s.answersCorrect[2]) + H(s.answersCorrect[3]) + (" " + s.answers[2].toUpperCase() + " - " + s.answers[3].toUpperCase()), t += lang.webaddress;
             const l = t;
@@ -741,7 +741,7 @@ var et = Ke(Fe => {
                     f++
                 }
                 y.font = a * m + "px Arial", y.textAlign = "center", y.textBaseline = "alphabetic", y.fillStyle = "#ffffff";
-                const j = e === "daily" ? lang.daily + lang.appname + " #" + s.seed.toString(10) : lang.practice + lang.appname;
+                const j = e === "daily" ? lang.daily + "Qwartel" + " #" + s.seed.toString(10) : lang.practice + "Qwartel";
                 let b = y.measureText(j),
                     x = b.actualBoundingBoxAscent;
                 y.fillText(j, n.width / 2, f * (a + r) + a - (a - x) / 2, n.width - h * 2), f++;
@@ -773,7 +773,7 @@ var et = Ke(Fe => {
                 }
                 const C = yield new Promise(z => n.toBlob(z));
                 if (!C) return;
-                const I = lang.appname`-${e==="daily"?"daily":"practice"}-${s.seed}.png`,
+                const I = "Qwartel"`-${e==="daily"?"daily":"practice"}-${s.seed}.png`,
                     A = new File([C], I, {
                         type: "image/png"
                     });
@@ -1003,7 +1003,7 @@ var et = Ke(Fe => {
             })
         },
         ka = k('<div class="absolute flex flex-col bg-gray-100 dark:bg-gray-800 text-black dark:text-white z-20 right-4 rounded-lg border-2 border-gray-400"><button type="button" class="flex flex-row-reverse items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all my-4"><div class="mr-3 text-black dark:text-white">' + lang.settings + '</div></button><button type="button" class="flex flex-row-reverse items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all mb-4"><div class="mr-3 text-black dark:text-white"> ' + lang.stats + '</div></button><button type="button" class="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all mb-4"><a class="flex flex-row-reverse items-center " href="' + lang.donatelink + '" target="_blank"><div class="mr-3 text-black dark:text-white">' + lang.donate + '</div></a></button><button type="button" class="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all mb-4"><a class="flex flex-row-reverse items-center " href="' + lang.patreonlink + '" target="_blank"><div class="mr-3 text-black dark:text-white">' + lang.patreon + '</div></a></button></div>'),
-        fa = k('<nav class="bg-slate-300 dark:bg-gray-900 w-screen border-b-2 border-white dark:border-gray-800"><div class="flex items-center max-w-[550px] m-auto px-4 py-2 relative"><span class="ml-3 text-black dark:text-white">' + lang.appname + '</span><div class="flex-1"><div class="flex mx-2"></div></div><div class="flex items-center"><button type="button" class="bg-indigo-500 dark:bg-gray-800 p-1 rounded-full text-white hover:text-gray-200 dark:text-gray-400 dark:hover:text-white transition-colors"></button><button type="button" class="bg-indigo-500 dark:bg-gray-800 p-1 rounded-full text-white hover:text-gray-200 dark:text-gray-400 dark:hover:text-white ml-2 transition"></button></div></div></nav>'),
+        fa = k('<nav class="bg-slate-300 dark:bg-gray-900 w-screen border-b-2 border-white dark:border-gray-800"><div class="flex items-center max-w-[550px] m-auto px-4 py-2 relative"><span class="ml-3 text-black dark:text-white">' + "Qwartel" + '</span><div class="flex-1"><div class="flex mx-2"></div></div><div class="flex items-center"><button type="button" class="bg-indigo-500 dark:bg-gray-800 p-1 rounded-full text-white hover:text-gray-200 dark:text-gray-400 dark:hover:text-white transition-colors"></button><button type="button" class="bg-indigo-500 dark:bg-gray-800 p-1 rounded-full text-white hover:text-gray-200 dark:text-gray-400 dark:hover:text-white ml-2 transition"></button></div></div></nav>'),
         wa = e => {
             const [s, t] = V(), [l, i] = ee(!1), [n, o] = ee();
             return (() => {
