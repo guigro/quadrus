@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="af>
   <head>
     <meta charset="UTF-8" />
-    <title>Quadrus</title>
+    <title>Qwartel</title>
     <meta
       name="description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai."
     />
     <meta
       name="keywords"
-      content="Quordle, Dordle, Wordle, word game, puzzle, brain teaser, Quadrus, français"
+      content="Quordle, Qwartel, Wordle, Afrikaans, Wortel, word game, puzzle, brain teaser"
     />
-    <meta name="author" content="Guigro" />
+    <meta name="author" content="Laurie" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
 
     <!-- FB Meta Tags -->
-    <meta property="og:url" content="https://quadrus.guigro.com" />
+    <meta property="og:url" content="https://qwartel.co.za" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quadrus" />
+    <meta property="og:title" content="Qwartel" />
     <meta
       property="og:description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai."
     />
     <meta
       property="og:image"
@@ -31,10 +31,6 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="quadrus.guigro.com" />
 
     <meta name="theme-color" content="#111827" />
     <meta name="color-scheme" content="dark" />
@@ -66,7 +62,7 @@
           return this.substring(this_len - search.length, this_len) === search;
         };
       }
-      var quordleInHost = window.location && window.location.host && window.location.host.endsWith("quadrus.guigro.com")
+      var quordleInHost = window.location && window.location.host && window.location.host.endsWith("qwartel.co.za")
       if (window.Sentry) {
         Sentry.onLoad(function() {
           Sentry.init({
@@ -79,7 +75,7 @@
       }
     </script>
     <script type="module">
-      const defaultLocale = "en";
+      const defaultLocale = "af";
       var newLocale = document.documentElement.lang;
       var newLocalePath = "/assets/lang/" + newLocale + ".js";
       var addScript = document.createElement('script');
