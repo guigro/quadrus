@@ -84,7 +84,7 @@ var examples = [
     ["TRANE", ["none", "none", "correct", "none", "correct"]],
     ["TRANE", ["none", "none", "none", "diff", "none"]],
     ["TRANE", ["none", "correct", "none", "none", "diff"]]
-];x
+];
 
 var supporters = ["Mia, Hanna, my ouers en Francois Botha"];
 
