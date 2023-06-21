@@ -5,7 +5,7 @@
     <title>Qwartel</title>
     <meta
       name="description"
-      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)"
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)."
     />
     <meta
       name="keywords"
@@ -23,11 +23,7 @@
     <meta property="og:title" content="Qwartel" />
     <meta
       property="og:description"
-      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)"
-    />
-    <meta
-      property="og:image"
-      content="https://quadrus.guigro.com/quadrus-banner-1200.png"
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -44,8 +40,6 @@
       href="favicon-128.png"
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5N3HGKPWB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -53,27 +47,6 @@
 
   gtag('config', 'G-Q5N3HGKPWB');
 </script>
-    <script>
-      if (!String.prototype.endsWith) {
-        String.prototype.endsWith = function(search, this_len) {
-          if (this_len === undefined || this_len > this.length) {
-            this_len = this.length;
-          }
-          return this.substring(this_len - search.length, this_len) === search;
-        };
-      }
-      var quordleInHost = window.location && window.location.host && window.location.host.endsWith("qwartel.co.za")
-      if (window.Sentry) {
-        Sentry.onLoad(function() {
-          Sentry.init({
-            dsn: quordleInHost ? "https://cd8139814dd64a07af2a72fe40bed481@o1140342.ingest.sentry.io/6197424" : null,
-            environment: "production",
-            release: "1.4",
-            ignoreErrors: ["ResizeObserver", "instantSearchSDKJSBridgeClearHighlight", "webkitExitFullScreen", "t.flat is not a function"]
-          });
-        });
-      }
-    </script>
     <script type="module">
       const defaultLocale = "af";
       var newLocale = document.documentElement.lang;
