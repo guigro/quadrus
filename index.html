@@ -1,40 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="af>
   <head>
     <meta charset="UTF-8" />
-    <title>Quadrus</title>
+    <title>Qwartel</title>
     <meta
       name="description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)."
     />
     <meta
       name="keywords"
-      content="Quordle, Dordle, Wordle, word game, puzzle, brain teaser, Quadrus, français"
+      content="Quordle, Qwartel, Wordle, Afrikaans, Wortel, word game, puzzle, brain teaser"
     />
-    <meta name="author" content="Guigro" />
+    <meta name="author" content="Laurie" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
 
     <!-- FB Meta Tags -->
-    <meta property="og:url" content="https://quadrus.guigro.com" />
+    <meta property="og:url" content="https://qwartel.co.za" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Quadrus" />
+    <meta property="og:title" content="Qwartel" />
     <meta
       property="og:description"
-      content="Mettez votre talent à rude épreuve en résolvant simultanément 4 Wordle en même temps ! Vous avez 9 essais pour résoudre les 4 mots. Un nouveau groupe de 4 mots sera disponible chaque jour."
-    />
-    <meta
-      property="og:image"
-      content="https://quadrus.guigro.com/quadrus-banner-1200.png"
+      content="Qwartel is 'n nuwe woordspeletjie wat soos Wortel werk, maar in plaas van net een woord te raai, moet mens 4 woorde gelyktydig raai. Qwartel is gebaseer op Quordle (https://www.merriam-webster.com/games/quordle/#/), die Engelse weergawe van die spel, geskep deur Freddie Meyer (https://www.fmeyer.com/)."
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="quadrus.guigro.com" />
 
     <meta name="theme-color" content="#111827" />
     <meta name="color-scheme" content="dark" />
@@ -48,8 +40,6 @@
       href="favicon-128.png"
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5N3HGKPWB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -57,29 +47,8 @@
 
   gtag('config', 'G-Q5N3HGKPWB');
 </script>
-    <script>
-      if (!String.prototype.endsWith) {
-        String.prototype.endsWith = function(search, this_len) {
-          if (this_len === undefined || this_len > this.length) {
-            this_len = this.length;
-          }
-          return this.substring(this_len - search.length, this_len) === search;
-        };
-      }
-      var quordleInHost = window.location && window.location.host && window.location.host.endsWith("quadrus.guigro.com")
-      if (window.Sentry) {
-        Sentry.onLoad(function() {
-          Sentry.init({
-            dsn: quordleInHost ? "https://cd8139814dd64a07af2a72fe40bed481@o1140342.ingest.sentry.io/6197424" : null,
-            environment: "production",
-            release: "1.4",
-            ignoreErrors: ["ResizeObserver", "instantSearchSDKJSBridgeClearHighlight", "webkitExitFullScreen", "t.flat is not a function"]
-          });
-        });
-      }
-    </script>
     <script type="module">
-      const defaultLocale = "en";
+      const defaultLocale = "af";
       var newLocale = document.documentElement.lang;
       var newLocalePath = "/assets/lang/" + newLocale + ".js";
       var addScript = document.createElement('script');
@@ -93,8 +62,8 @@
     <link rel="stylesheet" href="/assets/index.d2346360.css">
   </head>
   <body>
-    <noscript>Vous devez activer Javascript pour utiliser cette application.</noscript>
+    <noscript>Javascript moet geaktiveer word om hierdie toepassing te gebruik.</noscript>
     <div id="root"></div>
-    
+
   </body>
 </html>
